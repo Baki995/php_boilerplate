@@ -1,0 +1,89 @@
+/***************************************************************************
+Loader on page
+***************************************************************************/
+#container-main
+{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(50, 50, 50, 0.9);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 99999;
+}
+#container-main p
+{
+    z-index: 999999;
+    position: absolute;
+    color: white;
+    bottom: 37%;
+}
+.loader {
+    border: 9px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 9px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    z-index: 9999;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/***************************************************************************/
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active
+{
+    color: #0056b3 !important;
+    background-color: #e9ecef !important;
+    background: #e9ecef !important;
+    border-color: #dee2e6;
+    box-shadow: unset;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover
+{
+    z-index: 1;
+    color: #fff !important;
+    background: #007bff !important;
+    border-color: #007bff;
+    cursor: unset;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button
+{
+    color: #007bff !important;
+}
+.dataTables_wrapper .dataTables_paginate .ellipsis
+{
+    color: #0056b3 !important;
+    cursor: pointer;
+    border-color: #dee2e6;
+    padding: 0.5em 1em;
+}
+.btn-success
+{
+    background-color: #16a086;
+    border-color: #16a086;
+}
+.btnDangerWhite
+{
+    background-color: unset;
+    border-color: #343a40;
+}
+.btnPrimaryColor
+{
+    background-color: #0097e6;
+    border-color: #0097e6;
+}
